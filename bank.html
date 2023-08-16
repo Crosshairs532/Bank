@@ -9,9 +9,47 @@
 </head>
 
 <body>
+    <header>
+        <h1 class="text-center text-5xl">Welcome to my <span class="text-green-700"> bank</span></h1>
+    </header>
     <main>
-        <h1 class="text-center">Welcome to my <span class="text-green-700"> bank</span></h1>
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-7">
+                <div class="bg-green-600 rounded-2xl h-[200px] p-8">
+                    <h4 class="text-white text-3xl ">Deposit</h4>
+                    <h2 class="text-white text-2xl ">$<span id="dp-total">00</span></h2>
+                </div>
+                <div class="bg-green-600 rounded-2xl h-[200px] p-8">
+                    <h4 class="text-white text-3xl ">Withdraw</h4>
+                    <h2 class="text-white text-2xl ">$ <span id="with-total">00</span></h2>
+                </div>
+                <div class="bg-green-600 rounded-2xl h-[200px] p-8">
+                    <h4 class="text-white text-3xl ">Balance</h4>
+                    <h2 class="text-white text-2xl ">$<span id="total-balance">1000</span></h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-7">
+                <div class="bg-pink-400 rounded-2xl h-[200px]  p-8 space-y-3">
+                    <h4 class="text-white text-3xl ">Please Deposit</h4>
+                    <input type="text" name="" class="block w-[300px] p-2 rounded-md" placeholder="Deposit" id="depo">
+                    <button id='btn-deposit' class="bg-amber-500 hover:bg-fuchsia-500 p-3 rounded-md">Submit
+                        Now</button>
+                </div>
+                <div class="bg-amber-200 rounded-2xl h-[200px] p-8 space-y-3">
+                    <h4 class="text-white text-3xl "> please Withdraw</h4>
+                    <input type="text" name="" class="block w-[300px] p-2 rounded-md" placeholder="withdraw" id="withd">
+                    <button id='btn-withdraw' class="bg-amber-500 hover:bg-yellow-600 p-3 rounded-md">Submit
+                        Now</button>
+                </div>
+
+
+            </div>
+        </section>
     </main>
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
 </body>
 
 </html>
